@@ -1,0 +1,105 @@
+
+
+<!-- <i class="fa fa-address-book-o" aria-hidden="true"></i>
+<i class="fa fa-telegram" aria-hidden="true"></i>
+<button class="btn btn-success">save</button>
+<h2>hello angular</h2> -->
+
+<!-- <ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+      <a ngbNavLink>First</a>
+      <ng-template ngbNavContent>First content</ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>Second</a>
+      <ng-template ngbNavContent>Second content</ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>Third</a>
+      <ng-template ngbNavContent>Third content</ng-template>
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav"></div> -->
+
+  <!-- <i data-feather="circle"></i>
+
+  <i data-feather="align-center"></i> -->
+  
+  <!-- <button class="btn btn-success">Save</button>
+  <i class="fa fa-address-book" aria-hidden="true"></i>
+  <i class="fa fa-handshake-o" aria-hidden="true"></i> -->
+  <!-- <i data-feather="circle"></i> -->
+  <!-- <app-feather-icons icon="circle"></app-feather-icons>
+  <app-feather-icons icon="align-center"></app-feather-icons> -->
+  <!-- <button (click)="callMessage()">Press</button> -->
+ 
+ ##################################################################################################
+ 
+ <!-- <i class="fa fa-address-book-o" aria-hidden="true"></i>
+<i class="fa fa-telegram" aria-hidden="true"></i>
+<button class="btn btn-success">save</button>
+<h2>hello angular</h2> -->
+
+<!-- <ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+      <a ngbNavLink>First</a>
+      <ng-template ngbNavContent>First content</ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>Second</a>
+      <ng-template ngbNavContent>Second content</ng-template>
+    </li>
+    <li ngbNavItem>
+      <a ngbNavLink>Third</a>
+      <ng-template ngbNavContent>Third content</ng-template>
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav"></div> -->
+
+  <!-- <i data-feather="circle"></i>
+
+  <i data-feather="align-center"></i> -->
+  
+  <!-- <button class="btn btn-success">Save</button>
+  <i class="fa fa-address-book" aria-hidden="true"></i>
+  <i class="fa fa-handshake-o" aria-hidden="true"></i> -->
+  <!-- <i data-feather="circle"></i> -->
+  <!-- <app-feather-icons icon="circle"></app-feather-icons>
+  <app-feather-icons icon="align-center"></app-feather-icons> -->
+  <!-- <button (click)="callMessage()">Press</button> -->
+ 
+ ########################################################################################
+
+ import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FeatherIconsComponent } from './feather-icons/feather-icons.component';
+import { ToastrModule } from 'ngx-toastr';
+
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    FeatherIconsComponent,
+   
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+    
+    
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+################################################################################

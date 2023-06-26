@@ -1,0 +1,36 @@
+    <!-- main body start-->
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-header">
+                <h5>Product List</h5>
+            </div>
+            <div class="card-body">
+                <div class="btn-popup pull-right">
+                    <a class="btn btn-secondary" routerLink="/products/sub-product/add-product">Product Add</a>
+                </div>
+                <div id="batchDelete"
+                    class="category-table custom-datatable transcation-datatable userimage">
+                    <div class="table-responsive">
+                        <ngx-datatable class="bootstrap" [rows]="objRows"
+                            [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50"
+                            [rowHeight]="'auto'" [limit]="5">
+                            <ngx-datatable-column name="Name"></ngx-datatable-column>
+                            <ngx-datatable-column name="Title"></ngx-datatable-column>
+                            <ngx-datatable-column name="Code"></ngx-datatable-column>
+                            <ngx-datatable-column name="Price"></ngx-datatable-column>
+                            <ngx-datatable-column name="Sale Price"></ngx-datatable-column>
+                            <ngx-datatable-column name="Quantity"></ngx-datatable-column>
+                            <ngx-datatable-column name="Crested Date" prop="createdOn"></ngx-datatable-column>
+                            <ngx-datatable-column name="Action">
+                                <ng-template ngx-datatable-cell-template let-row="row">
+                                    <button type="button" style="color:green" (click)="edit(row.id)" class="fa fa-edit mr-2"></button>
+                                    <button type="button" style="color:red" (click)="deleteById(row.id)" class="fa fa-trash-o"></button>
+                                </ng-template>
+                            </ngx-datatable-column>
+                        </ngx-datatable>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main body end-->
