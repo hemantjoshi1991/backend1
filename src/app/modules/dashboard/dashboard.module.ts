@@ -8,6 +8,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 import { CounterComponent } from './counter/counter.component';
+import { CountUpModule } from 'ngx-countup';
+
 
 
 @NgModule({
@@ -22,8 +24,11 @@ import { CounterComponent } from './counter/counter.component';
     NgxDatatableModule,
     SharedModule,
     ReactiveFormsModule,
-    Ng2GoogleChartsModule
+    Ng2GoogleChartsModule,
+    CountUpModule
+
     
-  ]
+  ],
+  exports : [CounterComponent]
 })
 export class DashboardModule { }

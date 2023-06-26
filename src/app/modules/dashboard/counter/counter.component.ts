@@ -4,7 +4,7 @@ import { animate, style, transition, trigger } from '@angular/animations';
 @Component({
   selector: 'app-counter',
   templateUrl: './counter.component.html',
-  styleUrls: ['./counter.component.css'],
+  styleUrls: ['./counter.component.scss'],
   animations: [
     trigger('count', [
       transition(':increment', [
@@ -26,7 +26,7 @@ export class CounterComponent implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges) {
     if (changes['startValue'] && changes['endValue']) {
       this.animateCount();
-    }
+    } 
   }
 
   private animateCount() {
